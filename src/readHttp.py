@@ -11,7 +11,7 @@ hostUrl=hostName+"/wapbook/1137.html"
 
 getRequests=requests.get(hostUrl)
 
-reTxt='(<div style=\'background-color:#F4F4F4\'><a href=\')([\s\S]*?)(\'>)'
+reTxt='(<p><a href=")([\s\S]*?)(\">)'
 
 searchResult=re.search(reTxt,getRequests.content)
 
@@ -21,10 +21,11 @@ newUrl=hostName+str(searchResult.group(2))
 
 newGet=requests.get(newUrl)
 
-newTxt='(<div id="nr1"\>)([\s\S]*?)(</div>)'
+newTxt='(</a></p>)([\s\S]*?)(<p style="width:100%;text-alight:center;">)'
 
 getResult=re.search(newTxt,newGet.content.decode('GBK'))
 
-myTools.sendMail('peng.zhihang@moxiangroup.com','一念永恒',getResult.group(2).replace('&nbsp;','').replace('<br />',''))
+
+print getResult.group(2).replace('&nbsp;','').replace('<br/>','\n')
 
 

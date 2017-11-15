@@ -4,13 +4,8 @@
 
 '''
 
+strNum='1,2,3,4,5,6'
 
-fileStr=open('./myapp.log',"r")
+charName=strNum.split(',')
 
-strFile=fileStr.read()
-
-strA=strFile.split('\n')
-
-print strA[0]
-
-fileStr.close()
+print charName[len(charName)-1]
