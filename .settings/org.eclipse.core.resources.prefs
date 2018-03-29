@@ -1,10 +1,12 @@
 eclipse.preferences.version=1
 encoding//src/appiumDemo.py=utf-8
+encoding//src/compileforjenkins_m2ku_cn.py=utf-8
 encoding//src/googleHost.py=utf-8
 encoding//src/killMoQiang.py=utf-8
 encoding//src/makeArgs.py=utf-8
 encoding//src/moQiang.py=utf-8
 encoding//src/moxian.py=utf-8
+encoding//src/myMusic.py=utf-8
 encoding//src/myTools.py=utf-8
 encoding//src/postHttp.py=utf-8
 encoding//src/readHttp.py=utf-8

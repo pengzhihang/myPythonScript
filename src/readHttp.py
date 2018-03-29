@@ -5,6 +5,7 @@ Created on 2017年9月11日
 
 @author: Moxian
 '''
+
 import requests,re
 
 # =============================================================获取最新章节=============================================================
@@ -24,7 +25,7 @@ httpHeand={
 getRequests=requests.get(hostUrl,headers=httpHeand)
 
 reTxt='(<p><a href=")([\s\S]*?)(\">)'
- 
+
 searchResult=re.search(reTxt,getRequests.content)
 
 # =============================================================查看最新小说=============================================================

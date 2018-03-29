@@ -37,10 +37,5 @@ os.path.getmtime(path)  #返回path所指向的文件或者目录的最后修改
 '''
 
 ###############################################################
-os.listdir
-
-print sys.platform
-
-print os.environ
 
 os.makedirs('c:\\10\\10')
