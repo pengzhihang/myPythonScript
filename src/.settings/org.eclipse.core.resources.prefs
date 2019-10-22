@@ -11,6 +11,7 @@ encoding/moQiang.py=utf-8
 encoding/moxian.py=utf-8
 encoding/myMusic.py=utf-8
 encoding/myTools.py=utf-8
+encoding/online_moqiang_interface.py=UTF-8
 encoding/postHttp.py=utf-8
 encoding/readHttp.py=utf-8
 encoding/testBuild.py=utf-8
