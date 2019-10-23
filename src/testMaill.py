@@ -4,17 +4,19 @@ import smtplib
 from email.mime.text import MIMEText
 import requests
 
-gethost=requests.get('http://www.runoob.com/python/python-exercise-example2.html')
+gethost=requests.get('http://www.baidu.com')
+
+htmlPage=''''''
 
 mailUser = "luciferlly@qq.com"
-mailPasswd  = "nxmthtsrqtwfbbij"
-sengTo   = "peng.zhihang@moxiangroup.com;hangcheng163@163.com"
+mailPasswd  = "ssyzdmfdftjebfhg"
+sengTo   = "zhangwq@citex.io"
 
-msg = MIMEText(gethost.content, _subtype='html', _charset='UTF-8')
+msg = MIMEText(htmlPage, _subtype='html', _charset='utf-8')
 
-msg["Subject"] = "这里是邮件标题"
+msg["Subject"] = "使用Python发送邮件"
 msg["From"]=mailUser
-msg["To"]=mailPasswd
+msg["To"]=sengTo
 
 try:
     maillObj = smtplib.SMTP_SSL("smtp.qq.com", 465)
