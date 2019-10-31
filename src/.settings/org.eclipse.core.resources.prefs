@@ -14,6 +14,7 @@ encoding/myTools.py=utf-8
 encoding/online_moqiang_interface.py=UTF-8
 encoding/postHttp.py=utf-8
 encoding/readHttp.py=utf-8
+encoding/tempTest.py=utf-8
 encoding/testBuild.py=utf-8
 encoding/testJason.py=utf-8
 encoding/testLog.py=utf-8
