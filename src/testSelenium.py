@@ -20,8 +20,7 @@ wb.find_element_by_xpath('//a[contains(text(),"交易中心")]').click()
 
 time.sleep(5)
 
-
-
+wb.quit()
 
 # 
 # 

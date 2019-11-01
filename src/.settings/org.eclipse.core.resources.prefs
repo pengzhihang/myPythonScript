@@ -19,5 +19,6 @@ encoding/testBuild.py=utf-8
 encoding/testJason.py=utf-8
 encoding/testLog.py=utf-8
 encoding/testMaill.py=utf-8
+encoding/testPool.py=utf-8
 encoding/testSelenium.py=utf-8
 encoding/testString.py=utf-8
