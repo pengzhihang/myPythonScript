@@ -11,3 +11,6 @@ def getGoogleCode(secretKey):
     if len(googleCode) == 5:
         googleCode = '0' + googleCode
     return googleCode
+
+
+print getGoogleCode('AZ46LPXKMWDRFIAC')
