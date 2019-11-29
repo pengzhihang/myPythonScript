@@ -3,7 +3,6 @@
 import time
 from selenium import webdriver
 
-
 wb = webdriver.Chrome()
 
 wb.get('http://10.1.1.61:8090/#/pool')
@@ -18,22 +17,19 @@ wb.refresh()
 
 wb.find_element_by_xpath('//a[contains(text(),"交易中心")]').click()
 
-time.sleep(5)
+try:
+ 
+    wb.find_element_by_xpath('//div[@label="邮箱/手机"]//input').send_keys('13410448384')
+     
+    wb.find_element_by_xpath('//div[@label="登录密码"]//input').send_keys('Qq646832611')
+     
+    wb.find_element_by_id('submitForm').click()
+     
+    time.sleep(10)
+     
+    wb.quit()
+    
+except:
+    
+    wb.quit()
 
-wb.quit()
-
-# 
-# 
-# try:
-# 
-#     wb.find_element_by_xpath('//div[@label="邮箱/手机"]//input').send_keys('13410448384')
-#     
-#     wb.find_element_by_xpath('//div[@label="登录密码"]//input').send_keys('Qq646832611')
-#     
-#     wb.find_element_by_id('submitForm').click()
-#     
-#     time.sleep(10)
-#     
-#     wb.quit()
-# except:
-#     wb.quit()

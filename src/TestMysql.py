@@ -21,10 +21,10 @@ try:
 
     with connection.cursor() as cursor:
         # Read a single record
-        sql = "show tables"
+        sql = "SELECT * FROM new_coin_web.t_msg_record nt WHERE nt.CONTACT='uu@uuu.uuu' ORDER BY nt.CREATE_TIME DESC;"
         cursor.execute(sql)
         result = cursor.fetchall()
         print type(result)
-        print(result)
+        print(result[0][1])
 finally:
     connection.close()

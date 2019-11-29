@@ -1,8 +1,10 @@
 #coding:utf-8
+import json
 
-import requests
+a={}
 
-re=requests.get('http://www.baidu.com')
-
-print re.content
-
+for i in range(10):
+    
+    a.fromkeys(str(i),i)
+    
+print a
