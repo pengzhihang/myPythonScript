@@ -6,7 +6,7 @@ Created on 2017��10��26��
 @author: Moxian
 '''
 
-from appium import webdriver
+from selenium import webdriver
 import time
 
 
@@ -37,7 +37,9 @@ driver.wait_activity('.mainpage.MainActivity', 3, 6)
 driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.lemon.faceu:id/iv_layout_three_tab_left_icon")').click()
 
 
+
 time.sleep(5)
+
 
 print driver.current_activity
 
